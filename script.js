@@ -1,5 +1,3 @@
-// Complete the js code
-
 const limit = 50; // Heap memory usage limit in MB
 let elements = []; // Array to hold generated DOM elements
 
@@ -16,8 +14,6 @@ const generateElements = () => {
                 updateMemoryUsage();
             };
   
-
-
 // Function to remove DOM elements
 const removeElements = () => {
   // complete the function
@@ -27,10 +23,9 @@ const removeElements = () => {
             memoryUsage = 0;
             updateMemoryUsage();
 };
-
-// Function to update memory usage display
+	
 const updateMemoryUsage = () => {
-  // Complete this function
+  
 	  const memoryUsageDisplay = document.getElementById('memoryUsage');
             memoryUsageDisplay.textContent = `Memory Usage: ${memoryUsage.toFixed(2)} MB`;
 
